@@ -1,0 +1,55 @@
+.bg-layer {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* pipes bg */
+.bg-pipes {
+    position: absolute;
+    inset: 0;
+    background-color: var(--bg-base);
+
+    background-image: radial-gradient(circle, rgba(116,46,16,0.18) 1px, transparent 1px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.6;
+} .bg-pipes[style*="backgroundImage"] {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* dark veil gradient */
+.bg-veil {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        ellipse 130% 100% at 50% 50%, 
+        rgba(10, 7, 3, 0.62) 0%, 
+        rgba(10, 7, 3, 0.88) 100%
+    );
+}
+
+/* handyman gif */
+.bg-handyman {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: clamp(80px, 9vw, 150px);
+    height:auto;
+    animation: charBob 3.5s ease-in-out infinite;
+} .bg-character:not([src]), 
+  .bg-character[src=""] {
+    opacity: 0;
+} @keyframes charBob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+
+
+
