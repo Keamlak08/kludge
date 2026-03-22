@@ -14,28 +14,20 @@
 }
 @font-face {
     font-family: 'Phantom Sans';
-    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2') format('woff2'),
-         url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff') format('woff');
-    font-weight: bold;
+      src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2') format('woff2'),
+           url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff') format('woff');
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Phantom Sans';
-    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2') format('woff2'),
-         url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff') format('woff');
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2') format('woff2'),
+         url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
 }
-@font-face {
-    font-family: 'Phantom Sans';
-    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2') format('woff2'),
-         url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
+
 
 /* design styles */
 :root {

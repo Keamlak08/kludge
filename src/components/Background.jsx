@@ -8,17 +8,21 @@ export default function Background() {
                 className="bg-pipes"
                 style={BG ? { backgroundImage: `url(${BG})` } : {}}
             />
+            
             <div className="bg-veil" />
+            
             <img 
-                className="bg-handyman" 
-                src={HANDYMAN} 
-                alt="Handyman" 
+                className="bg-character" 
+                src={HANDYMAN || ''} 
+                alt="" 
             />
+
             <img
                 className="bg-cobweb top-left"
                 src={COBWEBS.heroTopLeft}
                 alt="Cobweb"
             />
+            
             <img
                 className="bg-cobweb top-right"
                 src={COBWEBS.heroTopRight}

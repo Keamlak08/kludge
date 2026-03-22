@@ -11,4 +11,4 @@ export const BG = '/pipes.png'
 
 // this is going to be a cartoon handyman fixing
 // the pipes in a looping gif, but I don't have it yet
-export const HANDYMAN = null
+export const HANDYMAN = '/handyman.gif'
