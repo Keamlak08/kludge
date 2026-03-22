@@ -27,7 +27,7 @@
 .bg-veil {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
+    background: radial-gradient(
         ellipse 130% 100% at 50% 50%, 
         rgba(10, 7, 3, 0.62) 0%, 
         rgba(10, 7, 3, 0.88) 100%
@@ -41,15 +41,15 @@
     left: 50%;
     width: clamp(80px, 9vw, 150px);
     height:auto;
-    animation: charBob 3.5s ease-in-out infinite;
 } .bg-character:not([src]), 
   .bg-character[src=""] {
     opacity: 0;
-} @keyframes charBob {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
 }
 
+/* cobwebs */
+.cobweb { position: absolute; pointer-events: none; opacity: 0.7; }
+.cobweb--hero-tl { top: 0; left: 0; width: clamp(180px, 22vw, 320px); }
+.cobweb--hero-tr { top: 0; right: 0; width: clamp(180px, 22vw, 300px); transform: scaleX(-1); }
 
 
 
