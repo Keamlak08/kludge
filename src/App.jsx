@@ -1,7 +1,7 @@
 import Background  from './components/Background'
 import Hero        from './components/Hero'
 import HowItWorks from './components/HowItWorks'
-
+import PrizeShop   from './components/PrizeShop'
 
 export default function App() {
     return (
@@ -11,6 +11,7 @@ export default function App() {
             <main>
                 <Hero />
                 <HowItWorks />
+                <PrizeShop />
             </main>
 
 
