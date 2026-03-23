@@ -1,0 +1,79 @@
+.hiw { position: relative; background: rgba(28, 19, 10, 0.5); }
+
+/* cobwebs */
+.section-cobweb { position: absolute; pointer-events: none; opacity: 0.65; z-index: 0; }
+.section-cobweb--left  { top: 0; left: 0; width: clamp(140px, 18vw, 260px); transform: translateX(-25%); }
+.section-cobweb--right { top: 0; right: 0; width: clamp(140px, 18vw, 260px); transform: scaleX(-1) translateX(-25%); }
+
+/* steps */
+.hiw-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 28px;
+  position: relative;
+}
+
+/* card line */
+.hiw-steps::before {
+  content: '';
+  position: absolute;
+  top: 44px;
+  left: 16%;
+  right: 16%;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--rust-dark) 0, var(--rust-dark) 8px,
+    transparent 8px, transparent 18px
+  );
+  z-index: 0;
+  display: none;
+}
+@media (min-width: 880px) { .hiw-steps::before { display: block; } }
+
+/* individual */
+.step-card {
+  position: relative;
+  z-index: 1;
+  padding: 26px 22px 26px 26px;
+  background: rgba(18, 13, 6, 0.78);
+  border-left: 3px solid var(--rust);
+  backdrop-filter: blur(4px);
+  transition: border-left-color 0.2s, transform 0.2s;
+}
+.step-card:hover {
+  border-left-color: var(--rust-bright);
+  transform: translateY(-4px);
+}
+
+/* large ghost number */
+.step-num {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--rust-dark);
+  letter-spacing: -0.04em;
+  margin-bottom: 10px;
+}
+
+.step-icon { font-size: 1.6rem; margin-bottom: 10px; display: block; }
+
+.step-title {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  text-transform: lowercase;
+}
+
+.step-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+.step-body em {
+  color: var(--rust-bright);
+  font-style: normal;
+  font-weight: bold;
+}
