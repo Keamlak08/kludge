@@ -30,13 +30,10 @@ export default function Hero() {
                 </div>
 
                 <div className="hero-cta">
-                    <RustyButton href="https://bmqp548m3x.zite.so" variant="solid" target="_blank" rel="noopener noreferrer">rsvp →</RustyButton>
+                    <RustyButton href="https://bmqp548m3x.zite.so" variant="solid" target="_blank" rel="noopener noreferrer">rsvp</RustyButton>
                     <RustyButton href="#how-it-works" variant="ghost">how it works</RustyButton>
                 </div>
 
-                <p className="hero-tagline">
-                    a hack club ysws. &nbsp;fix it. earn it. build toward something bigger.
-                </p>
                 <span className="hero-badge">
                     made by teens, for teens
                 </span>

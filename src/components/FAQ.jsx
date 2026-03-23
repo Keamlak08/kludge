@@ -30,7 +30,7 @@ const ITEMS = [
         id: 'what-counts',
         q: 'what counts as a fix?',
         a: <>
-        hardware, software, firmware — if it was broken and you made it not-broken,
+        hardware, software, firmware. if it was broken and you made it not-broken,
         it counts. cracked screens, dying batteries, corrupted drives, printers that
         have been mad since 2017, scripts that segfault on tuesdays. document it,
         show your work, earn points. more complex fix = more points.
@@ -42,7 +42,7 @@ const ITEMS = [
         a: <>
         honestly? sometimes yes. if the thing works when you're done,
         we're not judging. the kludge is in the spirit of it.
-        just document <em>why</em> you went the duct tape route —
+        just document <em>why</em> you went the duct tape route.
         "because it worked" is a valid engineering decision and we
         deeply respect it here.
         </>,
@@ -53,7 +53,7 @@ const ITEMS = [
         a: <>
         points scale with complexity and time. replacing a phone battery
         is not the same as diagnosing a blown mosfet on a motherboard.
-        a full rubric will be published when the program launches —
+        a full rubric will be published when the program launches, but
         for now, know that the harder the fix, the bigger the reward.
         </>,
     },
@@ -78,7 +78,6 @@ export default function FAQ() {
         )}
 
         <div className="wrap">
-            <p className="section-label">faq</p>
             <h2 className="section-title" style={{ marginBottom: '40px' }}>questions?</h2>
 
             <div className="faq-list">
