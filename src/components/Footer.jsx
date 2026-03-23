@@ -1,8 +1,8 @@
 import { COBWEBS } from '../config/assets'
 import './Footer.css'
 
-const SLACK_URL      = 'https://hackclub.enterprise.slack.com/archives/C0AMP5T4T8F' 
-const CONTACT_URL    = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' //rickroll for now
+const SLACK_URL = 'https://hackclub.enterprise.slack.com/archives/C0AMP5T4T8F' 
+const CONTACT_URL = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' //rickroll for now
 const HACKATHONS_URL = 'https://hackclub.com/hackathons/'   
 
 export default function Footer() {
@@ -29,7 +29,7 @@ export default function Footer() {
           <a href="https://hackclub.com" target="_blank" rel="noopener noreferrer">Hack Club</a>
           <a href={SLACK_URL} target="_blank" rel="noopener noreferrer">Slack</a>
           <a href={HACKATHONS_URL} target="_blank" rel="noopener noreferrer">Hackathons</a>
-          <a href={CONTACT_URL} target="_blank" rel="noopener noreferrer">Contact Keamlak</a>
+          <a href={CONTACT_URL} target="_blank" rel="noopener noreferrer">Contact Me</a>
         </nav>
       </div>
 

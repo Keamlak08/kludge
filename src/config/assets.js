@@ -1,9 +1,14 @@
 // KULDGE - asset paths
 
 // cobwebs to add to the vibe
+// we just gonna leave these as null for now...
 export const COBWEBS = {
     heroTopLeft: null,
     heroTopRight: null,
+    howItWorksLeft: null,
+    prizeCorner: null,
+    faqCorner: null,
+    footerLeft: null,
 }
 
 // background

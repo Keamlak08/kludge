@@ -44,7 +44,7 @@ export default function HowItWorks() {
 
       <div className="wrap">
         <p className="section-label">how it works</p>
-        <h2 className="section-title">three steps. zero prerequisites.</h2>
+        <h2 className="section-title">three steps. find fix & fun</h2>
         <p className="section-sub" style={{ marginBottom: '52px' }}>
           just a broken thing and the will to fix it.
         </p>
