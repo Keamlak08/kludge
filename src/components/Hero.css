@@ -1,69 +1,69 @@
 .hero {
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: var(--pad);
-  padding-top: 80px;
-  position: relative;
+    min-height: 80svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--pad);
+    padding-top: 80px;
+    position: relative;
 }
 /* top dark fade */
 .hero::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; height: 220px;
-  background: linear-gradient(to bottom, rgba(10,7,3,0.9), transparent);
-  pointer-events: none;
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 220px;
+    background: linear-gradient(to bottom, rgba(10,7,3,0.9), transparent);
+    pointer-events: none;
 }
 
 /* Hack Club flag */
 .hc-flag {
-  position: fixed;
-  top: 0; left: 10px;
-  z-index: 100;
-  width: 110px;
-  opacity: 0.85;
-  transition: opacity 0.2s;
+    position: fixed;
+    top: 0; left: 10px;
+    z-index: 100;
+    width: 110px;
+    opacity: 0.85;
+    transition: opacity 0.2s;
 }
 .hc-flag:hover { opacity: 1; }
 
 .hero-inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  width: 100%;
-  position: relative;
-  z-index: 1;
+    max-width: var(--max-w);
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 /* THE TITLE — takes up the room */
 .hero-title {
-  font-size: clamp(5.5rem, 10vw, 16rem);
-  font-weight: bold;
-  line-height: 0.88;
-  letter-spacing: -0.03em;
-  color: var(--text-primary);
-  text-shadow:
-    3px 5px 0 var(--rust-deeper),
-    7px 14px 28px rgba(0,0,0,0.7);
-  margin-bottom: 0.25em;
+    font-size: clamp(5.5rem, 10vw, 16rem);
+    font-weight: bold;
+    line-height: 0.88;
+    letter-spacing: -0.03em;
+    color: var(--text-primary);
+    text-shadow:
+        3px 5px 0 var(--rust-deeper),
+        7px 14px 28px rgba(0,0,0,0.7);
+    margin-bottom: 0.25em;
 }
 
 .hero-motto {
-  font-size: clamp(0.85rem, 2vw, 1.15rem);
-  font-style: italic;
-  color: var(--text-secondary);
-  letter-spacing: 0.025em;
-  margin-bottom: 2rem;
+    font-size: clamp(0.85rem, 2vw, 1.15rem);
+    font-style: italic;
+    color: var(--text-secondary);
+    letter-spacing: 0.025em;
+    margin-bottom: 2rem;
 }
 
 /* dictionary definition card */
 .hero-def {
-  display: inline-block;
-  border-left: 3px solid var(--rust);
-  padding: 12px 20px;
-  margin-bottom: 2.5rem;
-  background: rgba(10, 7, 3, 0.6);
-  backdrop-filter: blur(3px);
+    display: inline-block;
+    border-left: 3px solid var(--rust);
+    padding: 12px 20px;
+    margin-bottom: 2.5rem;
+    background: rgba(10, 7, 3, 0.6);
+    backdrop-filter: blur(3px);
 }
 .def-word { font-weight: bold; font-size: 0.95rem; margin-right: 6px; }
 .def-phonetic { font-size: 0.85rem; color: var(--text-muted); margin-right: 6px; }
@@ -72,52 +72,52 @@
 
 /* CTA row */
 .hero-cta {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .hero-tagline {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  letter-spacing: 0.02em;
-  margin-bottom: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+    margin-bottom: 14px;
 }
 
 /* "made by teens, for teens" */
 .hero-badge {
-  display: inline-block;
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  color: var(--rust);
-  border: 1px solid var(--rust-dark);
-  padding: 3px 12px;
+    display: inline-block;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: var(--rust);
+    border: 1px solid var(--rust-dark);
+    padding: 3px 12px;
 }
 
 /* scroll bounce indicator */
 .scroll-hint {
-  position: absolute;
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  opacity: 0.35;
-  animation: bounce 2.2s ease-in-out infinite;
-  z-index: 1;
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    opacity: 0.35;
+    animation: bounce 2.2s ease-in-out infinite;
+    z-index: 1;
 }
 .scroll-hint span { font-size: 0.65rem; letter-spacing: 0.1em; color: var(--text-muted); }
 .scroll-arrow {
-  width: 14px; height: 14px;
-  border-right: 2px solid var(--rust);
-  border-bottom: 2px solid var(--rust);
-  transform: rotate(45deg);
+    width: 14px; height: 14px;
+    border-right: 2px solid var(--rust);
+    border-bottom: 2px solid var(--rust);
+    transform: rotate(45deg);
 }
 @keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50%       { transform: translateX(-50%) translateY(7px); }
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(7px); }
 }

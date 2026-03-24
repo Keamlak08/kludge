@@ -1,0 +1,2 @@
+main > section:nth-child(even) { background: rgba(26, 18, 9, 0.52); }
+main > section:nth-child(odd)  { background: transparent; }

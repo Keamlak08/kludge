@@ -73,6 +73,7 @@
     padding: 0;
 } html {
     scroll-behavior: smooth;
+    zoom: 125%;
 } body {
     font-family: 'Phantom Sans', Georgia, serif, sans-serif;
     background: var(--bg-base);
