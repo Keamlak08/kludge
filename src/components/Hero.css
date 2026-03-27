@@ -109,6 +109,13 @@
     opacity: 0.35;
     animation: bounce 2.2s ease-in-out infinite;
     z-index: 1;
+
+    display: none;
+}
+@media (min-width: 768px) {
+    .scroll-hint { 
+        display: flex; 
+    }
 }
 .scroll-hint span { font-size: 0.65rem; letter-spacing: 0.1em; color: var(--text-muted); }
 .scroll-arrow {

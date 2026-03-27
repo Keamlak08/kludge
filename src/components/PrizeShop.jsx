@@ -2,10 +2,26 @@ import { COBWEBS } from '../config/assets'
 import './PrizeShop.css'
 
 const TOOLS = [
-	{ name: 'electric screwdriver kit', desc: 'variable torque, interchangeable bits - the workhorse' },
-	{ name: 'soldering iron', desc: 'temperature-controlled. because burns don\'t look good.' },
-	{ name: 'cool ruler', desc: "you can't fix what you can't measure. basic law." },
-	{ name: '+ more tools', desc: 'shop is subject to change. check back.' },
+	{ 
+		img: 'escrewdriver.png',
+		name: 'electric screwdriver kit', 
+		desc: 'variable torque, interchangeable bits - the workhorse' 
+	},
+	{ 
+		img: 'solder.png', 
+		name: 'soldering iron', 
+		desc: 'temperature-controlled. because burns don\'t look good.' 
+	},
+	{ 
+		img: 'ruler.png', 
+		name: 'cool ruler', 
+		desc: "you can't fix what you can't measure. basic law." 
+	},
+	{ 
+		img: 'pinecil.png', 
+		name: '+ more tools', 
+		desc: 'shop is subject to change. check back.' 
+	},
 ]
 
 	export default function PrizeShop() {
@@ -26,9 +42,12 @@ const TOOLS = [
 			<div className="prize-grid">
 			{TOOLS.map(t => (
 				<div key={t.name} className="prize-card">
-				<span className="prize-icon" aria-hidden="true">{t.icon}</span>
-				<h3 className="prize-name">{t.name}</h3>
-				<p className="prize-desc">{t.desc}</p>
+					{/* <div className="prize-img-wrap">
+						{t.img && <img src={t.img} alt={t.name} className="prize-img" />}
+					</div> */}
+					<span className="prize-icon" aria-hidden="true">{t.icon}</span>
+					<h3 className="prize-name">{t.name}</h3>
+					<p className="prize-desc">{t.desc}</p>
 				</div>
 			))}
 			</div>
